@@ -5,27 +5,27 @@ export interface SearchResponse {
 }
 
 export interface Gif {
-  type:                       Type;
-  id:                         string;
-  url:                        string;
-  slug:                       string;
-  bitly_gif_url:              string;
-  bitly_url:                  string;
-  embed_url:                  string;
-  username:                   string;
-  source:                     string;
-  title:                      string;
-  rating:                     Rating;
-  content_url:                string;
-  source_tld:                 string;
-  source_post_url:            string;
-  is_sticker:                 number;
-  import_datetime:            Date;
-  trending_datetime:          string;
-  images:                     Images;
+  type?:                       Type;
+  id?:                         string;
+  url?:                        string;
+  slug?:                       string;
+  bitly_gif_url?:              string;
+  bitly_url?:                  string;
+  embed_url?:                  string;
+  username?:                   string;
+  source?:                     string;
+  title?:                      string;
+  rating?:                     Rating;
+  content_url?:                string;
+  source_tld?:                 string;
+  source_post_url?:            string;
+  is_sticker?:                 number;
+  import_datetime?:            Date;
+  trending_datetime?:          string;
+  images?:                     Images;
   user?:                      User;
-  analytics_response_payload: string;
-  analytics:                  Analytics;
+  analytics_response_payload?: string;
+  analytics?:                  Analytics;
 }
 
 export interface Analytics {
